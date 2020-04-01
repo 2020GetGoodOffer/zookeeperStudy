@@ -1,0 +1,342 @@
+INFO main org.apache.zookeeper.ZooKeeper - Client environment:zookeeper.version=3.4.14-4c25d480e66aadd371de8bd2fd8da255ac140bcf, built on 03/06/2019 16:18 GMT
+INFO main org.apache.zookeeper.ZooKeeper - Client environment:host.name=BF-201908101638
+INFO main org.apache.zookeeper.ZooKeeper - Client environment:java.version=11.0.5
+INFO main org.apache.zookeeper.ZooKeeper - Client environment:java.vendor=Oracle Corporation
+INFO main org.apache.zookeeper.ZooKeeper - Client environment:java.home=C:\Program Files\Java\jdk-11.0.5
+INFO main org.apache.zookeeper.ZooKeeper - Client environment:java.class.path=C:\Users\Administrator\IdeaProjects\zookeeper\out\production\zookeeper;C:\Users\Administrator\IdeaProjects\zookeeper\lib\jline-0.9.94.jar;C:\Users\Administrator\IdeaProjects\zookeeper\lib\log4j-1.2.17.jar;C:\Users\Administrator\IdeaProjects\zookeeper\lib\netty-3.10.6.Final.jar;C:\Users\Administrator\IdeaProjects\zookeeper\lib\slf4j-api-1.7.25.jar;C:\Users\Administrator\IdeaProjects\zookeeper\lib\slf4j-log4j12-1.7.25.jar;C:\Users\Administrator\IdeaProjects\zookeeper\lib\zookeeper-3.4.14.jar
+INFO main org.apache.zookeeper.ZooKeeper - Client environment:java.library.path=C:\Program Files\Java\jdk-11.0.5\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;D:\Program Files (x86)\Microsoft Visual Studio\Shared\Packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\tools\Roslyn45;C:\Program Files\Java\jdk1.8.0_221\bin;C:\Program Files\JetBrains\IntelliJ IDEA 2019.2.4\plugins\maven\lib\maven3\bin;C:\Program Files\Git\cmd;D:\mysql-8.0.17-winx64\bin;C:\Program Files\TortoiseGit\bin;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;;C:\Program Files\JetBrains\IntelliJ IDEA 2019.2.4\bin;;C:\Program Files\JetBrains\WebStorm 2019.2.4\bin;;.
+INFO main org.apache.zookeeper.ZooKeeper - Client environment:java.io.tmpdir=C:\Users\ADMINI~1\AppData\Local\Temp\
+INFO main org.apache.zookeeper.ZooKeeper - Client environment:java.compiler=<NA>
+INFO main org.apache.zookeeper.ZooKeeper - Client environment:os.name=Windows 10
+INFO main org.apache.zookeeper.ZooKeeper - Client environment:os.arch=amd64
+INFO main org.apache.zookeeper.ZooKeeper - Client environment:os.version=10.0
+INFO main org.apache.zookeeper.ZooKeeper - Client environment:user.name=Administrator
+INFO main org.apache.zookeeper.ZooKeeper - Client environment:user.home=C:\Users\Administrator
+INFO main org.apache.zookeeper.ZooKeeper - Client environment:user.dir=C:\Users\Administrator\IdeaProjects\zookeeper
+INFO main org.apache.zookeeper.ZooKeeper - Initiating client connection, connectString=192.168.2.142:2181 sessionTimeout=5000 watcher=zookeeperTest$1@7a3d45bd
+DEBUG main org.apache.zookeeper.ClientCnxn - zookeeper.disableAutoWatchReset is false
+DEBUG main-SendThread(192.168.2.142:2181) org.apache.zookeeper.SaslServerPrincipal - Canonicalized address to 192.168.2.142
+INFO main-SendThread(192.168.2.142:2181) org.apache.zookeeper.ClientCnxn - Opening socket connection to server 192.168.2.142/192.168.2.142:2181. Will not attempt to authenticate using SASL (unknown error)
+WARN main-SendThread(192.168.2.142:2181) org.apache.zookeeper.ClientCnxn - Client session timed out, have not heard from server in 23021ms for sessionid 0x0
+INFO main-SendThread(192.168.2.142:2181) org.apache.zookeeper.ClientCnxn - Client session timed out, have not heard from server in 23021ms for sessionid 0x0, closing socket connection and attempting reconnect
+DEBUG main-SendThread(192.168.2.142:2181) org.apache.zookeeper.ClientCnxnSocketNIO - Ignoring exception during shutdown input
+java.net.SocketException: Socket is not connected
+	at java.base/sun.nio.ch.Net.translateToSocketException(Net.java:162)
+	at java.base/sun.nio.ch.Net.translateException(Net.java:196)
+	at java.base/sun.nio.ch.Net.translateException(Net.java:202)
+	at java.base/sun.nio.ch.SocketAdaptor.shutdownInput(SocketAdaptor.java:400)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.cleanup(ClientCnxnSocketNIO.java:200)
+	at org.apache.zookeeper.ClientCnxn$SendThread.cleanup(ClientCnxn.java:1246)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1170)
+Caused by: java.nio.channels.NotYetConnectedException
+	at java.base/sun.nio.ch.SocketChannelImpl.shutdownInput(SocketChannelImpl.java:917)
+	at java.base/sun.nio.ch.SocketAdaptor.shutdownInput(SocketAdaptor.java:398)
+	... 3 more
+DEBUG main-SendThread(192.168.2.142:2181) org.apache.zookeeper.ClientCnxnSocketNIO - Ignoring exception during shutdown output
+java.net.SocketException: Socket is not connected
+	at java.base/sun.nio.ch.Net.translateToSocketException(Net.java:162)
+	at java.base/sun.nio.ch.Net.translateException(Net.java:196)
+	at java.base/sun.nio.ch.Net.translateException(Net.java:202)
+	at java.base/sun.nio.ch.SocketAdaptor.shutdownOutput(SocketAdaptor.java:408)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.cleanup(ClientCnxnSocketNIO.java:207)
+	at org.apache.zookeeper.ClientCnxn$SendThread.cleanup(ClientCnxn.java:1246)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1170)
+Caused by: java.nio.channels.NotYetConnectedException
+	at java.base/sun.nio.ch.SocketChannelImpl.shutdownOutput(SocketChannelImpl.java:934)
+	at java.base/sun.nio.ch.SocketAdaptor.shutdownOutput(SocketAdaptor.java:406)
+	... 3 more
+INFO main org.apache.zookeeper.ZooKeeper - Client environment:zookeeper.version=3.4.14-4c25d480e66aadd371de8bd2fd8da255ac140bcf, built on 03/06/2019 16:18 GMT
+INFO main org.apache.zookeeper.ZooKeeper - Client environment:host.name=BF-201908101638
+INFO main org.apache.zookeeper.ZooKeeper - Client environment:java.version=11.0.5
+INFO main org.apache.zookeeper.ZooKeeper - Client environment:java.vendor=Oracle Corporation
+INFO main org.apache.zookeeper.ZooKeeper - Client environment:java.home=C:\Program Files\Java\jdk-11.0.5
+INFO main org.apache.zookeeper.ZooKeeper - Client environment:java.class.path=C:\Users\Administrator\IdeaProjects\zookeeper\out\production\zookeeper;C:\Users\Administrator\IdeaProjects\zookeeper\lib\jline-0.9.94.jar;C:\Users\Administrator\IdeaProjects\zookeeper\lib\log4j-1.2.17.jar;C:\Users\Administrator\IdeaProjects\zookeeper\lib\netty-3.10.6.Final.jar;C:\Users\Administrator\IdeaProjects\zookeeper\lib\slf4j-api-1.7.25.jar;C:\Users\Administrator\IdeaProjects\zookeeper\lib\slf4j-log4j12-1.7.25.jar;C:\Users\Administrator\IdeaProjects\zookeeper\lib\zookeeper-3.4.14.jar
+INFO main org.apache.zookeeper.ZooKeeper - Client environment:java.library.path=C:\Program Files\Java\jdk-11.0.5\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;D:\Program Files (x86)\Microsoft Visual Studio\Shared\Packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\tools\Roslyn45;C:\Program Files\Java\jdk1.8.0_221\bin;C:\Program Files\JetBrains\IntelliJ IDEA 2019.2.4\plugins\maven\lib\maven3\bin;C:\Program Files\Git\cmd;D:\mysql-8.0.17-winx64\bin;C:\Program Files\TortoiseGit\bin;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;;C:\Program Files\JetBrains\IntelliJ IDEA 2019.2.4\bin;;C:\Program Files\JetBrains\WebStorm 2019.2.4\bin;;.
+INFO main org.apache.zookeeper.ZooKeeper - Client environment:java.io.tmpdir=C:\Users\ADMINI~1\AppData\Local\Temp\
+INFO main org.apache.zookeeper.ZooKeeper - Client environment:java.compiler=<NA>
+INFO main org.apache.zookeeper.ZooKeeper - Client environment:os.name=Windows 10
+INFO main org.apache.zookeeper.ZooKeeper - Client environment:os.arch=amd64
+INFO main org.apache.zookeeper.ZooKeeper - Client environment:os.version=10.0
+INFO main org.apache.zookeeper.ZooKeeper - Client environment:user.name=Administrator
+INFO main org.apache.zookeeper.ZooKeeper - Client environment:user.home=C:\Users\Administrator
+INFO main org.apache.zookeeper.ZooKeeper - Client environment:user.dir=C:\Users\Administrator\IdeaProjects\zookeeper
+INFO main org.apache.zookeeper.ZooKeeper - Initiating client connection, connectString=192.168.2.142:2181 sessionTimeout=5000 watcher=zookeeperTest$1@7a3d45bd
+DEBUG main org.apache.zookeeper.ClientCnxn - zookeeper.disableAutoWatchReset is false
+DEBUG main-SendThread(192.168.2.142:2181) org.apache.zookeeper.SaslServerPrincipal - Canonicalized address to 192.168.2.142
+INFO main-SendThread(192.168.2.142:2181) org.apache.zookeeper.ClientCnxn - Opening socket connection to server 192.168.2.142/192.168.2.142:2181. Will not attempt to authenticate using SASL (unknown error)
+WARN main-SendThread(192.168.2.142:2181) org.apache.zookeeper.ClientCnxn - Client session timed out, have not heard from server in 23024ms for sessionid 0x0
+INFO main-SendThread(192.168.2.142:2181) org.apache.zookeeper.ClientCnxn - Client session timed out, have not heard from server in 23024ms for sessionid 0x0, closing socket connection and attempting reconnect
+DEBUG main-SendThread(192.168.2.142:2181) org.apache.zookeeper.ClientCnxnSocketNIO - Ignoring exception during shutdown input
+java.net.SocketException: Socket is not connected
+	at java.base/sun.nio.ch.Net.translateToSocketException(Net.java:162)
+	at java.base/sun.nio.ch.Net.translateException(Net.java:196)
+	at java.base/sun.nio.ch.Net.translateException(Net.java:202)
+	at java.base/sun.nio.ch.SocketAdaptor.shutdownInput(SocketAdaptor.java:400)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.cleanup(ClientCnxnSocketNIO.java:200)
+	at org.apache.zookeeper.ClientCnxn$SendThread.cleanup(ClientCnxn.java:1246)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1170)
+Caused by: java.nio.channels.NotYetConnectedException
+	at java.base/sun.nio.ch.SocketChannelImpl.shutdownInput(SocketChannelImpl.java:917)
+	at java.base/sun.nio.ch.SocketAdaptor.shutdownInput(SocketAdaptor.java:398)
+	... 3 more
+DEBUG main-SendThread(192.168.2.142:2181) org.apache.zookeeper.ClientCnxnSocketNIO - Ignoring exception during shutdown output
+java.net.SocketException: Socket is not connected
+	at java.base/sun.nio.ch.Net.translateToSocketException(Net.java:162)
+	at java.base/sun.nio.ch.Net.translateException(Net.java:196)
+	at java.base/sun.nio.ch.Net.translateException(Net.java:202)
+	at java.base/sun.nio.ch.SocketAdaptor.shutdownOutput(SocketAdaptor.java:408)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.cleanup(ClientCnxnSocketNIO.java:207)
+	at org.apache.zookeeper.ClientCnxn$SendThread.cleanup(ClientCnxn.java:1246)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1170)
+Caused by: java.nio.channels.NotYetConnectedException
+	at java.base/sun.nio.ch.SocketChannelImpl.shutdownOutput(SocketChannelImpl.java:934)
+	at java.base/sun.nio.ch.SocketAdaptor.shutdownOutput(SocketAdaptor.java:406)
+	... 3 more
+DEBUG main-SendThread(192.168.2.142:2181) org.apache.zookeeper.SaslServerPrincipal - Canonicalized address to 192.168.2.142
+INFO main-SendThread(192.168.2.142:2181) org.apache.zookeeper.ClientCnxn - Opening socket connection to server 192.168.2.142/192.168.2.142:2181. Will not attempt to authenticate using SASL (unknown error)
+WARN main-SendThread(192.168.2.142:2181) org.apache.zookeeper.ClientCnxn - Client session timed out, have not heard from server in 24015ms for sessionid 0x0
+INFO main-SendThread(192.168.2.142:2181) org.apache.zookeeper.ClientCnxn - Client session timed out, have not heard from server in 24015ms for sessionid 0x0, closing socket connection and attempting reconnect
+DEBUG main-SendThread(192.168.2.142:2181) org.apache.zookeeper.ClientCnxnSocketNIO - Ignoring exception during shutdown input
+java.net.SocketException: Socket is not connected
+	at java.base/sun.nio.ch.Net.translateToSocketException(Net.java:162)
+	at java.base/sun.nio.ch.Net.translateException(Net.java:196)
+	at java.base/sun.nio.ch.Net.translateException(Net.java:202)
+	at java.base/sun.nio.ch.SocketAdaptor.shutdownInput(SocketAdaptor.java:400)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.cleanup(ClientCnxnSocketNIO.java:200)
+	at org.apache.zookeeper.ClientCnxn$SendThread.cleanup(ClientCnxn.java:1246)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1170)
+Caused by: java.nio.channels.NotYetConnectedException
+	at java.base/sun.nio.ch.SocketChannelImpl.shutdownInput(SocketChannelImpl.java:917)
+	at java.base/sun.nio.ch.SocketAdaptor.shutdownInput(SocketAdaptor.java:398)
+	... 3 more
+DEBUG main-SendThread(192.168.2.142:2181) org.apache.zookeeper.ClientCnxnSocketNIO - Ignoring exception during shutdown output
+java.net.SocketException: Socket is not connected
+	at java.base/sun.nio.ch.Net.translateToSocketException(Net.java:162)
+	at java.base/sun.nio.ch.Net.translateException(Net.java:196)
+	at java.base/sun.nio.ch.Net.translateException(Net.java:202)
+	at java.base/sun.nio.ch.SocketAdaptor.shutdownOutput(SocketAdaptor.java:408)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.cleanup(ClientCnxnSocketNIO.java:207)
+	at org.apache.zookeeper.ClientCnxn$SendThread.cleanup(ClientCnxn.java:1246)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1170)
+Caused by: java.nio.channels.NotYetConnectedException
+	at java.base/sun.nio.ch.SocketChannelImpl.shutdownOutput(SocketChannelImpl.java:934)
+	at java.base/sun.nio.ch.SocketAdaptor.shutdownOutput(SocketAdaptor.java:406)
+	... 3 more
+DEBUG main-SendThread(192.168.2.142:2181) org.apache.zookeeper.SaslServerPrincipal - Canonicalized address to 192.168.2.142
+INFO main-SendThread(192.168.2.142:2181) org.apache.zookeeper.ClientCnxn - Opening socket connection to server 192.168.2.142/192.168.2.142:2181. Will not attempt to authenticate using SASL (unknown error)
+WARN main-SendThread(192.168.2.142:2181) org.apache.zookeeper.ClientCnxn - Client session timed out, have not heard from server in 24011ms for sessionid 0x0
+INFO main-SendThread(192.168.2.142:2181) org.apache.zookeeper.ClientCnxn - Client session timed out, have not heard from server in 24011ms for sessionid 0x0, closing socket connection and attempting reconnect
+DEBUG main-SendThread(192.168.2.142:2181) org.apache.zookeeper.ClientCnxnSocketNIO - Ignoring exception during shutdown input
+java.net.SocketException: Socket is not connected
+	at java.base/sun.nio.ch.Net.translateToSocketException(Net.java:162)
+	at java.base/sun.nio.ch.Net.translateException(Net.java:196)
+	at java.base/sun.nio.ch.Net.translateException(Net.java:202)
+	at java.base/sun.nio.ch.SocketAdaptor.shutdownInput(SocketAdaptor.java:400)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.cleanup(ClientCnxnSocketNIO.java:200)
+	at org.apache.zookeeper.ClientCnxn$SendThread.cleanup(ClientCnxn.java:1246)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1170)
+Caused by: java.nio.channels.NotYetConnectedException
+	at java.base/sun.nio.ch.SocketChannelImpl.shutdownInput(SocketChannelImpl.java:917)
+	at java.base/sun.nio.ch.SocketAdaptor.shutdownInput(SocketAdaptor.java:398)
+	... 3 more
+DEBUG main-SendThread(192.168.2.142:2181) org.apache.zookeeper.ClientCnxnSocketNIO - Ignoring exception during shutdown output
+java.net.SocketException: Socket is not connected
+	at java.base/sun.nio.ch.Net.translateToSocketException(Net.java:162)
+	at java.base/sun.nio.ch.Net.translateException(Net.java:196)
+	at java.base/sun.nio.ch.Net.translateException(Net.java:202)
+	at java.base/sun.nio.ch.SocketAdaptor.shutdownOutput(SocketAdaptor.java:408)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.cleanup(ClientCnxnSocketNIO.java:207)
+	at org.apache.zookeeper.ClientCnxn$SendThread.cleanup(ClientCnxn.java:1246)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1170)
+Caused by: java.nio.channels.NotYetConnectedException
+	at java.base/sun.nio.ch.SocketChannelImpl.shutdownOutput(SocketChannelImpl.java:934)
+	at java.base/sun.nio.ch.SocketAdaptor.shutdownOutput(SocketAdaptor.java:406)
+	... 3 more
+DEBUG main-SendThread(192.168.2.142:2181) org.apache.zookeeper.SaslServerPrincipal - Canonicalized address to 192.168.2.142
+INFO main-SendThread(192.168.2.142:2181) org.apache.zookeeper.ClientCnxn - Opening socket connection to server 192.168.2.142/192.168.2.142:2181. Will not attempt to authenticate using SASL (unknown error)
+WARN main-SendThread(192.168.2.142:2181) org.apache.zookeeper.ClientCnxn - Client session timed out, have not heard from server in 24011ms for sessionid 0x0
+INFO main-SendThread(192.168.2.142:2181) org.apache.zookeeper.ClientCnxn - Client session timed out, have not heard from server in 24011ms for sessionid 0x0, closing socket connection and attempting reconnect
+DEBUG main-SendThread(192.168.2.142:2181) org.apache.zookeeper.ClientCnxnSocketNIO - Ignoring exception during shutdown input
+java.net.SocketException: Socket is not connected
+	at java.base/sun.nio.ch.Net.translateToSocketException(Net.java:162)
+	at java.base/sun.nio.ch.Net.translateException(Net.java:196)
+	at java.base/sun.nio.ch.Net.translateException(Net.java:202)
+	at java.base/sun.nio.ch.SocketAdaptor.shutdownInput(SocketAdaptor.java:400)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.cleanup(ClientCnxnSocketNIO.java:200)
+	at org.apache.zookeeper.ClientCnxn$SendThread.cleanup(ClientCnxn.java:1246)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1170)
+Caused by: java.nio.channels.NotYetConnectedException
+	at java.base/sun.nio.ch.SocketChannelImpl.shutdownInput(SocketChannelImpl.java:917)
+	at java.base/sun.nio.ch.SocketAdaptor.shutdownInput(SocketAdaptor.java:398)
+	... 3 more
+DEBUG main-SendThread(192.168.2.142:2181) org.apache.zookeeper.ClientCnxnSocketNIO - Ignoring exception during shutdown output
+java.net.SocketException: Socket is not connected
+	at java.base/sun.nio.ch.Net.translateToSocketException(Net.java:162)
+	at java.base/sun.nio.ch.Net.translateException(Net.java:196)
+	at java.base/sun.nio.ch.Net.translateException(Net.java:202)
+	at java.base/sun.nio.ch.SocketAdaptor.shutdownOutput(SocketAdaptor.java:408)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.cleanup(ClientCnxnSocketNIO.java:207)
+	at org.apache.zookeeper.ClientCnxn$SendThread.cleanup(ClientCnxn.java:1246)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1170)
+Caused by: java.nio.channels.NotYetConnectedException
+	at java.base/sun.nio.ch.SocketChannelImpl.shutdownOutput(SocketChannelImpl.java:934)
+	at java.base/sun.nio.ch.SocketAdaptor.shutdownOutput(SocketAdaptor.java:406)
+	... 3 more
+DEBUG main-SendThread(192.168.2.142:2181) org.apache.zookeeper.SaslServerPrincipal - Canonicalized address to 192.168.2.142
+INFO main-SendThread(192.168.2.142:2181) org.apache.zookeeper.ClientCnxn - Opening socket connection to server 192.168.2.142/192.168.2.142:2181. Will not attempt to authenticate using SASL (unknown error)
+WARN main-SendThread(192.168.2.142:2181) org.apache.zookeeper.ClientCnxn - Client session timed out, have not heard from server in 24012ms for sessionid 0x0
+INFO main-SendThread(192.168.2.142:2181) org.apache.zookeeper.ClientCnxn - Client session timed out, have not heard from server in 24012ms for sessionid 0x0, closing socket connection and attempting reconnect
+DEBUG main-SendThread(192.168.2.142:2181) org.apache.zookeeper.ClientCnxnSocketNIO - Ignoring exception during shutdown input
+java.net.SocketException: Socket is not connected
+	at java.base/sun.nio.ch.Net.translateToSocketException(Net.java:162)
+	at java.base/sun.nio.ch.Net.translateException(Net.java:196)
+	at java.base/sun.nio.ch.Net.translateException(Net.java:202)
+	at java.base/sun.nio.ch.SocketAdaptor.shutdownInput(SocketAdaptor.java:400)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.cleanup(ClientCnxnSocketNIO.java:200)
+	at org.apache.zookeeper.ClientCnxn$SendThread.cleanup(ClientCnxn.java:1246)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1170)
+Caused by: java.nio.channels.NotYetConnectedException
+	at java.base/sun.nio.ch.SocketChannelImpl.shutdownInput(SocketChannelImpl.java:917)
+	at java.base/sun.nio.ch.SocketAdaptor.shutdownInput(SocketAdaptor.java:398)
+	... 3 more
+DEBUG main-SendThread(192.168.2.142:2181) org.apache.zookeeper.ClientCnxnSocketNIO - Ignoring exception during shutdown output
+java.net.SocketException: Socket is not connected
+	at java.base/sun.nio.ch.Net.translateToSocketException(Net.java:162)
+	at java.base/sun.nio.ch.Net.translateException(Net.java:196)
+	at java.base/sun.nio.ch.Net.translateException(Net.java:202)
+	at java.base/sun.nio.ch.SocketAdaptor.shutdownOutput(SocketAdaptor.java:408)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.cleanup(ClientCnxnSocketNIO.java:207)
+	at org.apache.zookeeper.ClientCnxn$SendThread.cleanup(ClientCnxn.java:1246)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1170)
+Caused by: java.nio.channels.NotYetConnectedException
+	at java.base/sun.nio.ch.SocketChannelImpl.shutdownOutput(SocketChannelImpl.java:934)
+	at java.base/sun.nio.ch.SocketAdaptor.shutdownOutput(SocketAdaptor.java:406)
+	... 3 more
+DEBUG main-SendThread(192.168.2.142:2181) org.apache.zookeeper.SaslServerPrincipal - Canonicalized address to 192.168.2.142
+INFO main-SendThread(192.168.2.142:2181) org.apache.zookeeper.ClientCnxn - Opening socket connection to server 192.168.2.142/192.168.2.142:2181. Will not attempt to authenticate using SASL (unknown error)
+WARN main-SendThread(192.168.2.142:2181) org.apache.zookeeper.ClientCnxn - Client session timed out, have not heard from server in 24016ms for sessionid 0x0
+INFO main-SendThread(192.168.2.142:2181) org.apache.zookeeper.ClientCnxn - Client session timed out, have not heard from server in 24016ms for sessionid 0x0, closing socket connection and attempting reconnect
+DEBUG main-SendThread(192.168.2.142:2181) org.apache.zookeeper.ClientCnxnSocketNIO - Ignoring exception during shutdown input
+java.net.SocketException: Socket is not connected
+	at java.base/sun.nio.ch.Net.translateToSocketException(Net.java:162)
+	at java.base/sun.nio.ch.Net.translateException(Net.java:196)
+	at java.base/sun.nio.ch.Net.translateException(Net.java:202)
+	at java.base/sun.nio.ch.SocketAdaptor.shutdownInput(SocketAdaptor.java:400)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.cleanup(ClientCnxnSocketNIO.java:200)
+	at org.apache.zookeeper.ClientCnxn$SendThread.cleanup(ClientCnxn.java:1246)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1170)
+Caused by: java.nio.channels.NotYetConnectedException
+	at java.base/sun.nio.ch.SocketChannelImpl.shutdownInput(SocketChannelImpl.java:917)
+	at java.base/sun.nio.ch.SocketAdaptor.shutdownInput(SocketAdaptor.java:398)
+	... 3 more
+DEBUG main-SendThread(192.168.2.142:2181) org.apache.zookeeper.ClientCnxnSocketNIO - Ignoring exception during shutdown output
+java.net.SocketException: Socket is not connected
+	at java.base/sun.nio.ch.Net.translateToSocketException(Net.java:162)
+	at java.base/sun.nio.ch.Net.translateException(Net.java:196)
+	at java.base/sun.nio.ch.Net.translateException(Net.java:202)
+	at java.base/sun.nio.ch.SocketAdaptor.shutdownOutput(SocketAdaptor.java:408)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.cleanup(ClientCnxnSocketNIO.java:207)
+	at org.apache.zookeeper.ClientCnxn$SendThread.cleanup(ClientCnxn.java:1246)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1170)
+Caused by: java.nio.channels.NotYetConnectedException
+	at java.base/sun.nio.ch.SocketChannelImpl.shutdownOutput(SocketChannelImpl.java:934)
+	at java.base/sun.nio.ch.SocketAdaptor.shutdownOutput(SocketAdaptor.java:406)
+	... 3 more
+INFO main org.apache.zookeeper.ZooKeeper - Client environment:zookeeper.version=3.4.14-4c25d480e66aadd371de8bd2fd8da255ac140bcf, built on 03/06/2019 16:18 GMT
+INFO main org.apache.zookeeper.ZooKeeper - Client environment:host.name=BF-201908101638
+INFO main org.apache.zookeeper.ZooKeeper - Client environment:java.version=11.0.5
+INFO main org.apache.zookeeper.ZooKeeper - Client environment:java.vendor=Oracle Corporation
+INFO main org.apache.zookeeper.ZooKeeper - Client environment:java.home=C:\Program Files\Java\jdk-11.0.5
+INFO main org.apache.zookeeper.ZooKeeper - Client environment:java.class.path=C:\Users\Administrator\IdeaProjects\zookeeper\out\production\zookeeper;C:\Users\Administrator\IdeaProjects\zookeeper\lib\jline-0.9.94.jar;C:\Users\Administrator\IdeaProjects\zookeeper\lib\log4j-1.2.17.jar;C:\Users\Administrator\IdeaProjects\zookeeper\lib\netty-3.10.6.Final.jar;C:\Users\Administrator\IdeaProjects\zookeeper\lib\slf4j-api-1.7.25.jar;C:\Users\Administrator\IdeaProjects\zookeeper\lib\slf4j-log4j12-1.7.25.jar;C:\Users\Administrator\IdeaProjects\zookeeper\lib\zookeeper-3.4.14.jar
+INFO main org.apache.zookeeper.ZooKeeper - Client environment:java.library.path=C:\Program Files\Java\jdk-11.0.5\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;D:\Program Files (x86)\Microsoft Visual Studio\Shared\Packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\tools\Roslyn45;C:\Program Files\Java\jdk1.8.0_221\bin;C:\Program Files\JetBrains\IntelliJ IDEA 2019.2.4\plugins\maven\lib\maven3\bin;C:\Program Files\Git\cmd;D:\mysql-8.0.17-winx64\bin;C:\Program Files\TortoiseGit\bin;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;;C:\Program Files\JetBrains\IntelliJ IDEA 2019.2.4\bin;;C:\Program Files\JetBrains\WebStorm 2019.2.4\bin;;.
+INFO main org.apache.zookeeper.ZooKeeper - Client environment:java.io.tmpdir=C:\Users\ADMINI~1\AppData\Local\Temp\
+INFO main org.apache.zookeeper.ZooKeeper - Client environment:java.compiler=<NA>
+INFO main org.apache.zookeeper.ZooKeeper - Client environment:os.name=Windows 10
+INFO main org.apache.zookeeper.ZooKeeper - Client environment:os.arch=amd64
+INFO main org.apache.zookeeper.ZooKeeper - Client environment:os.version=10.0
+INFO main org.apache.zookeeper.ZooKeeper - Client environment:user.name=Administrator
+INFO main org.apache.zookeeper.ZooKeeper - Client environment:user.home=C:\Users\Administrator
+INFO main org.apache.zookeeper.ZooKeeper - Client environment:user.dir=C:\Users\Administrator\IdeaProjects\zookeeper
+INFO main org.apache.zookeeper.ZooKeeper - Initiating client connection, connectString=192.168.2.142:2181 sessionTimeout=10000 watcher=zookeeperTest$1@7a3d45bd
+DEBUG main org.apache.zookeeper.ClientCnxn - zookeeper.disableAutoWatchReset is false
+INFO main org.apache.zookeeper.ZooKeeper - Client environment:zookeeper.version=3.4.14-4c25d480e66aadd371de8bd2fd8da255ac140bcf, built on 03/06/2019 16:18 GMT
+INFO main org.apache.zookeeper.ZooKeeper - Client environment:host.name=BF-201908101638
+INFO main org.apache.zookeeper.ZooKeeper - Client environment:java.version=11.0.5
+INFO main org.apache.zookeeper.ZooKeeper - Client environment:java.vendor=Oracle Corporation
+INFO main org.apache.zookeeper.ZooKeeper - Client environment:java.home=C:\Program Files\Java\jdk-11.0.5
+INFO main org.apache.zookeeper.ZooKeeper - Client environment:java.class.path=C:\Users\Administrator\IdeaProjects\zookeeper\out\production\zookeeper;C:\Users\Administrator\IdeaProjects\zookeeper\lib\jline-0.9.94.jar;C:\Users\Administrator\IdeaProjects\zookeeper\lib\log4j-1.2.17.jar;C:\Users\Administrator\IdeaProjects\zookeeper\lib\netty-3.10.6.Final.jar;C:\Users\Administrator\IdeaProjects\zookeeper\lib\slf4j-api-1.7.25.jar;C:\Users\Administrator\IdeaProjects\zookeeper\lib\slf4j-log4j12-1.7.25.jar;C:\Users\Administrator\IdeaProjects\zookeeper\lib\zookeeper-3.4.14.jar
+INFO main org.apache.zookeeper.ZooKeeper - Client environment:java.library.path=C:\Program Files\Java\jdk-11.0.5\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;D:\Program Files (x86)\Microsoft Visual Studio\Shared\Packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\tools\Roslyn45;C:\Program Files\Java\jdk1.8.0_221\bin;C:\Program Files\JetBrains\IntelliJ IDEA 2019.2.4\plugins\maven\lib\maven3\bin;C:\Program Files\Git\cmd;D:\mysql-8.0.17-winx64\bin;C:\Program Files\TortoiseGit\bin;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;;C:\Program Files\JetBrains\IntelliJ IDEA 2019.2.4\bin;;C:\Program Files\JetBrains\WebStorm 2019.2.4\bin;;.
+INFO main org.apache.zookeeper.ZooKeeper - Client environment:java.io.tmpdir=C:\Users\ADMINI~1\AppData\Local\Temp\
+INFO main org.apache.zookeeper.ZooKeeper - Client environment:java.compiler=<NA>
+INFO main org.apache.zookeeper.ZooKeeper - Client environment:os.name=Windows 10
+INFO main org.apache.zookeeper.ZooKeeper - Client environment:os.arch=amd64
+INFO main org.apache.zookeeper.ZooKeeper - Client environment:os.version=10.0
+INFO main org.apache.zookeeper.ZooKeeper - Client environment:user.name=Administrator
+INFO main org.apache.zookeeper.ZooKeeper - Client environment:user.home=C:\Users\Administrator
+INFO main org.apache.zookeeper.ZooKeeper - Client environment:user.dir=C:\Users\Administrator\IdeaProjects\zookeeper
+INFO main org.apache.zookeeper.ZooKeeper - Initiating client connection, connectString=192.168.2.142:43057 sessionTimeout=10000 watcher=zookeeperTest$1@7a3d45bd
+DEBUG main org.apache.zookeeper.ClientCnxn - zookeeper.disableAutoWatchReset is false
+INFO main org.apache.zookeeper.ZooKeeper - Client environment:zookeeper.version=3.4.14-4c25d480e66aadd371de8bd2fd8da255ac140bcf, built on 03/06/2019 16:18 GMT
+INFO main org.apache.zookeeper.ZooKeeper - Client environment:host.name=BF-201908101638
+INFO main org.apache.zookeeper.ZooKeeper - Client environment:java.version=1.8.0_221
+INFO main org.apache.zookeeper.ZooKeeper - Client environment:java.vendor=Oracle Corporation
+INFO main org.apache.zookeeper.ZooKeeper - Client environment:java.home=C:\Program Files\Java\jdk1.8.0_221\jre
+INFO main org.apache.zookeeper.ZooKeeper - Client environment:java.class.path=C:\Program Files\Java\jdk1.8.0_221\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_221\jre\lib\deploy.jar;C:\Program Files\Java\jdk1.8.0_221\jre\lib\ext\access-bridge-64.jar;C:\Program Files\Java\jdk1.8.0_221\jre\lib\ext\cldrdata.jar;C:\Program Files\Java\jdk1.8.0_221\jre\lib\ext\dnsns.jar;C:\Program Files\Java\jdk1.8.0_221\jre\lib\ext\jaccess.jar;C:\Program Files\Java\jdk1.8.0_221\jre\lib\ext\jfxrt.jar;C:\Program Files\Java\jdk1.8.0_221\jre\lib\ext\localedata.jar;C:\Program Files\Java\jdk1.8.0_221\jre\lib\ext\nashorn.jar;C:\Program Files\Java\jdk1.8.0_221\jre\lib\ext\sunec.jar;C:\Program Files\Java\jdk1.8.0_221\jre\lib\ext\sunjce_provider.jar;C:\Program Files\Java\jdk1.8.0_221\jre\lib\ext\sunmscapi.jar;C:\Program Files\Java\jdk1.8.0_221\jre\lib\ext\sunpkcs11.jar;C:\Program Files\Java\jdk1.8.0_221\jre\lib\ext\zipfs.jar;C:\Program Files\Java\jdk1.8.0_221\jre\lib\javaws.jar;C:\Program Files\Java\jdk1.8.0_221\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_221\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_221\jre\lib\jfxswt.jar;C:\Program Files\Java\jdk1.8.0_221\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_221\jre\lib\management-agent.jar;C:\Program Files\Java\jdk1.8.0_221\jre\lib\plugin.jar;C:\Program Files\Java\jdk1.8.0_221\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_221\jre\lib\rt.jar;C:\Users\Administrator\IdeaProjects\zookeeper\out\production\zookeeper;C:\Users\Administrator\IdeaProjects\zookeeper\lib\jline-0.9.94.jar;C:\Users\Administrator\IdeaProjects\zookeeper\lib\log4j-1.2.17.jar;C:\Users\Administrator\IdeaProjects\zookeeper\lib\netty-3.10.6.Final.jar;C:\Users\Administrator\IdeaProjects\zookeeper\lib\slf4j-api-1.7.25.jar;C:\Users\Administrator\IdeaProjects\zookeeper\lib\slf4j-log4j12-1.7.25.jar;C:\Users\Administrator\IdeaProjects\zookeeper\lib\zookeeper-3.4.14.jar;C:\Program Files\JetBrains\IntelliJ IDEA 2019.2.4\lib\idea_rt.jar
+INFO main org.apache.zookeeper.ZooKeeper - Client environment:java.library.path=C:\Program Files\Java\jdk1.8.0_221\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;D:\Program Files (x86)\Microsoft Visual Studio\Shared\Packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\tools\Roslyn45;C:\Program Files\Java\jdk1.8.0_221\bin;C:\Program Files\JetBrains\IntelliJ IDEA 2019.2.4\plugins\maven\lib\maven3\bin;C:\Program Files\Git\cmd;D:\mysql-8.0.17-winx64\bin;C:\Program Files\TortoiseGit\bin;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;;C:\Program Files\JetBrains\IntelliJ IDEA 2019.2.4\bin;;C:\Program Files\JetBrains\WebStorm 2019.2.4\bin;;.
+INFO main org.apache.zookeeper.ZooKeeper - Client environment:java.io.tmpdir=C:\Users\ADMINI~1\AppData\Local\Temp\
+INFO main org.apache.zookeeper.ZooKeeper - Client environment:java.compiler=<NA>
+INFO main org.apache.zookeeper.ZooKeeper - Client environment:os.name=Windows 10
+INFO main org.apache.zookeeper.ZooKeeper - Client environment:os.arch=amd64
+INFO main org.apache.zookeeper.ZooKeeper - Client environment:os.version=10.0
+INFO main org.apache.zookeeper.ZooKeeper - Client environment:user.name=Administrator
+INFO main org.apache.zookeeper.ZooKeeper - Client environment:user.home=C:\Users\Administrator
+INFO main org.apache.zookeeper.ZooKeeper - Client environment:user.dir=C:\Users\Administrator\IdeaProjects\zookeeper
+INFO main org.apache.zookeeper.ZooKeeper - Initiating client connection, connectString=192.168.2.142:2181 sessionTimeout=10000 watcher=zookeeperTest$1@238e0d81
+DEBUG main org.apache.zookeeper.ClientCnxn - zookeeper.disableAutoWatchReset is false
+INFO main org.apache.zookeeper.ZooKeeper - Client environment:zookeeper.version=3.4.14-4c25d480e66aadd371de8bd2fd8da255ac140bcf, built on 03/06/2019 16:18 GMT
+INFO main org.apache.zookeeper.ZooKeeper - Client environment:host.name=BF-201908101638
+INFO main org.apache.zookeeper.ZooKeeper - Client environment:java.version=1.8.0_221
+INFO main org.apache.zookeeper.ZooKeeper - Client environment:java.vendor=Oracle Corporation
+INFO main org.apache.zookeeper.ZooKeeper - Client environment:java.home=C:\Program Files\Java\jdk1.8.0_221\jre
+INFO main org.apache.zookeeper.ZooKeeper - Client environment:java.class.path=C:\Program Files\Java\jdk1.8.0_221\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_221\jre\lib\deploy.jar;C:\Program Files\Java\jdk1.8.0_221\jre\lib\ext\access-bridge-64.jar;C:\Program Files\Java\jdk1.8.0_221\jre\lib\ext\cldrdata.jar;C:\Program Files\Java\jdk1.8.0_221\jre\lib\ext\dnsns.jar;C:\Program Files\Java\jdk1.8.0_221\jre\lib\ext\jaccess.jar;C:\Program Files\Java\jdk1.8.0_221\jre\lib\ext\jfxrt.jar;C:\Program Files\Java\jdk1.8.0_221\jre\lib\ext\localedata.jar;C:\Program Files\Java\jdk1.8.0_221\jre\lib\ext\nashorn.jar;C:\Program Files\Java\jdk1.8.0_221\jre\lib\ext\sunec.jar;C:\Program Files\Java\jdk1.8.0_221\jre\lib\ext\sunjce_provider.jar;C:\Program Files\Java\jdk1.8.0_221\jre\lib\ext\sunmscapi.jar;C:\Program Files\Java\jdk1.8.0_221\jre\lib\ext\sunpkcs11.jar;C:\Program Files\Java\jdk1.8.0_221\jre\lib\ext\zipfs.jar;C:\Program Files\Java\jdk1.8.0_221\jre\lib\javaws.jar;C:\Program Files\Java\jdk1.8.0_221\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_221\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_221\jre\lib\jfxswt.jar;C:\Program Files\Java\jdk1.8.0_221\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_221\jre\lib\management-agent.jar;C:\Program Files\Java\jdk1.8.0_221\jre\lib\plugin.jar;C:\Program Files\Java\jdk1.8.0_221\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_221\jre\lib\rt.jar;C:\Users\Administrator\IdeaProjects\zookeeper\out\production\zookeeper;C:\Users\Administrator\IdeaProjects\zookeeper\lib\jline-0.9.94.jar;C:\Users\Administrator\IdeaProjects\zookeeper\lib\log4j-1.2.17.jar;C:\Users\Administrator\IdeaProjects\zookeeper\lib\netty-3.10.6.Final.jar;C:\Users\Administrator\IdeaProjects\zookeeper\lib\slf4j-api-1.7.25.jar;C:\Users\Administrator\IdeaProjects\zookeeper\lib\slf4j-log4j12-1.7.25.jar;C:\Users\Administrator\IdeaProjects\zookeeper\lib\zookeeper-3.4.14.jar;C:\Program Files\JetBrains\IntelliJ IDEA 2019.2.4\lib\idea_rt.jar
+INFO main org.apache.zookeeper.ZooKeeper - Client environment:java.library.path=C:\Program Files\Java\jdk1.8.0_221\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;D:\Program Files (x86)\Microsoft Visual Studio\Shared\Packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\tools\Roslyn45;C:\Program Files\Java\jdk1.8.0_221\bin;C:\Program Files\JetBrains\IntelliJ IDEA 2019.2.4\plugins\maven\lib\maven3\bin;C:\Program Files\Git\cmd;D:\mysql-8.0.17-winx64\bin;C:\Program Files\TortoiseGit\bin;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;;C:\Program Files\JetBrains\IntelliJ IDEA 2019.2.4\bin;;C:\Program Files\JetBrains\WebStorm 2019.2.4\bin;;.
+INFO main org.apache.zookeeper.ZooKeeper - Client environment:java.io.tmpdir=C:\Users\ADMINI~1\AppData\Local\Temp\
+INFO main org.apache.zookeeper.ZooKeeper - Client environment:java.compiler=<NA>
+INFO main org.apache.zookeeper.ZooKeeper - Client environment:os.name=Windows 10
+INFO main org.apache.zookeeper.ZooKeeper - Client environment:os.arch=amd64
+INFO main org.apache.zookeeper.ZooKeeper - Client environment:os.version=10.0
+INFO main org.apache.zookeeper.ZooKeeper - Client environment:user.name=Administrator
+INFO main org.apache.zookeeper.ZooKeeper - Client environment:user.home=C:\Users\Administrator
+INFO main org.apache.zookeeper.ZooKeeper - Client environment:user.dir=C:\Users\Administrator\IdeaProjects\zookeeper
+INFO main org.apache.zookeeper.ZooKeeper - Initiating client connection, connectString=192.168.2.142:2181 sessionTimeout=5000 watcher=zookeeperTest$1@238e0d81
+DEBUG main org.apache.zookeeper.ClientCnxn - zookeeper.disableAutoWatchReset is false
+DEBUG main-SendThread(192.168.2.142:2181) org.apache.zookeeper.SaslServerPrincipal - Canonicalized address to 192.168.2.142
+INFO main-SendThread(192.168.2.142:2181) org.apache.zookeeper.ClientCnxn - Opening socket connection to server 192.168.2.142/192.168.2.142:2181. Will not attempt to authenticate using SASL (unknown error)
+WARN main-SendThread(192.168.2.142:2181) org.apache.zookeeper.ClientCnxn - Client session timed out, have not heard from server in 23039ms for sessionid 0x0
+INFO main-SendThread(192.168.2.142:2181) org.apache.zookeeper.ClientCnxn - Client session timed out, have not heard from server in 23039ms for sessionid 0x0, closing socket connection and attempting reconnect
+DEBUG main-SendThread(192.168.2.142:2181) org.apache.zookeeper.ClientCnxnSocketNIO - Ignoring exception during shutdown input
+java.net.SocketException: Socket is not connected
+	at sun.nio.ch.Net.translateToSocketException(Net.java:123)
+	at sun.nio.ch.Net.translateException(Net.java:157)
+	at sun.nio.ch.Net.translateException(Net.java:163)
+	at sun.nio.ch.SocketAdaptor.shutdownInput(SocketAdaptor.java:401)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.cleanup(ClientCnxnSocketNIO.java:200)
+	at org.apache.zookeeper.ClientCnxn$SendThread.cleanup(ClientCnxn.java:1246)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1170)
+Caused by: java.nio.channels.NotYetConnectedException
+	at sun.nio.ch.SocketChannelImpl.shutdownInput(SocketChannelImpl.java:782)
+	at sun.nio.ch.SocketAdaptor.shutdownInput(SocketAdaptor.java:399)
+	... 3 more
+DEBUG main-SendThread(192.168.2.142:2181) org.apache.zookeeper.ClientCnxnSocketNIO - Ignoring exception during shutdown output
+java.net.SocketException: Socket is not connected
+	at sun.nio.ch.Net.translateToSocketException(Net.java:123)
+	at sun.nio.ch.Net.translateException(Net.java:157)
+	at sun.nio.ch.Net.translateException(Net.java:163)
+	at sun.nio.ch.SocketAdaptor.shutdownOutput(SocketAdaptor.java:409)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.cleanup(ClientCnxnSocketNIO.java:207)
+	at org.apache.zookeeper.ClientCnxn$SendThread.cleanup(ClientCnxn.java:1246)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1170)
+Caused by: java.nio.channels.NotYetConnectedException
+	at sun.nio.ch.SocketChannelImpl.shutdownOutput(SocketChannelImpl.java:799)
+	at sun.nio.ch.SocketAdaptor.shutdownOutput(SocketAdaptor.java:407)
+	... 3 more
