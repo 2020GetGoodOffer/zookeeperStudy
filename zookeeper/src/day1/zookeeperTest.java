@@ -1,3 +1,5 @@
+package day1;
+
 import org.apache.zookeeper.*;
 import org.apache.zookeeper.data.ACL;
 import org.apache.zookeeper.data.Id;
@@ -14,7 +16,6 @@ public class zookeeperTest {
 
     private static final String IP="192.168.2.142:2181";
     private static ZooKeeper zooKeeper;
-
     @Before
     public void connect() throws Exception{
         //创建一个计数器对象
